@@ -4,20 +4,24 @@
     <style>
       body{
         text-align: center;
+        font-size: 2vh;
       }
       input[type="password"] {
         display: inline-block;
-        height: 30px;
+        height: 10vh;
         width: 60%;
-        border-radius: 10px;
+        border-radius: 10%;
         text-align: center;
       }
     </style>
   </head>
   <body>
     <h1>Password Generator</h1>
-    <input type=password id="password" onchange="reflect(this)" placeholder="Using your password manager to input and generate password here.">
-    <p><code id="result"></code></p>
+    <p>
+      Using your password manager to input and generate password here.
+    </p>
+    <input type=password id="password" onchange="reflect(this)" placeholder="">
+    <h1><code id="result"></code></h1>
   </body>
   <script>
     const elem=(id)=>document.getElementById(id);
