@@ -1,8 +1,29 @@
 <html>
   <head>
-    
+    <title>Password Generator</title>
+    <style>
+      body{
+        text-align: center;
+      }
+      input[type="password"] {
+        display: inline-block;
+        height: 30px;
+        width: 60%;
+        border-radius: 10px;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-    <input type=password>
+    <h1>Password Generator</h1>
+    <input type=password id="password" onchange="reflect(this)" placeholder="Using your password manager to input and generate password here.">
+    <p id="result"></p>
   </body>
+  <script>
+    const elem=(id)=>document.getElementById(id);
+    const reflect=(input)=>{
+      console.log(input.value);
+      elem("result").innerText = elem(input.id).value;
+    };
+  </script>
 </html>
