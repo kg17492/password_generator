@@ -7,18 +7,17 @@
         font-size: 2vh;
       }
       input[type="password"] {
-        display: inline-block;
         height: 10vh;
         width: 60%;
-        border-radius: 10%;
+        border-radius: 3vh;
+        border: 1vh solid darkgray;
         text-align: center;
       }
     </style>
   </head>
   <body>
-    <h1>Password Generator</h1>
     <p>
-      Chromeのパスワードマネージャーではパスワード入力欄以外でパスワードを自動生成できないので、パスワード入力欄を用意しました。
+      Chromeのパスワードマネージャーではパスワード入力欄以外でパスワードを自動生成できないので、パスワード入力欄を用意した。
     </p>
     <input type=password id="password" onchange="reflect(this)" placeholder="">
     <h1><code id="result"></code></h1>
